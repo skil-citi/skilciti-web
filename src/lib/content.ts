@@ -1,5 +1,6 @@
 import {
   AppWindow,
+  Banknote,
   Compass,
   Gem,
   GraduationCap,
@@ -27,7 +28,7 @@ export const site = {
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://skilciti.com",
   tagline: "Software & systems, engineered to scale.",
   description:
-    "Skilciti is a Nairobi-based software company building mobile apps, web apps, custom software and systems for startups and established businesses — from consultation to launch and beyond.",
+    "Skilciti is a Nairobi-based software company building mobile apps, web apps, custom software, digital registries and management systems for startups, businesses and public institutions — from consultation to launch and beyond.",
   email: "info@skilciti.com",
   phone: "+254 722 743354",
   phoneHref: "+254722743354",
@@ -68,12 +69,12 @@ export const services: Service[] = [
     title: "Custom Software Development",
     short: "Custom Software",
     description:
-      "Bespoke platforms, internal tools and integrations shaped around how your business actually works — built to solve your specific goals, not someone else's template.",
+      "Bespoke platforms, management systems, digital registries and integrations shaped around how your organization actually works — built to solve your specific goals, not someone else's template.",
     features: [
+      "Management systems & digital registries",
       "Business process automation",
       "APIs & third-party integrations",
       "Admin dashboards & internal tools",
-      "Scalable cloud architecture",
     ],
     icon: Terminal,
   },
@@ -142,8 +143,8 @@ export const services: Service[] = [
     features: [
       "Architecture & tech-stack advisory",
       "System audits & modernization",
+      "E-government & digital registry design",
       "Digital transformation roadmaps",
-      "Technical due diligence",
     ],
     icon: Compass,
   },
@@ -211,12 +212,17 @@ export const industries: { name: string; blurb: string; icon: LucideIcon }[] = [
   {
     name: "Finance",
     blurb: "Reliable, auditable fintech and back-office software you can trust.",
-    icon: Landmark,
+    icon: Banknote,
   },
   {
     name: "Logistics",
     blurb: "Tracking, dispatch and fleet tools that keep goods and data moving.",
     icon: Truck,
+  },
+  {
+    name: "Government",
+    blurb: "Digital registries and management systems that make public services faster and more transparent.",
+    icon: Landmark,
   },
   {
     name: "Startups",
@@ -263,8 +269,10 @@ export const marqueeItems = [
   "Web Apps",
   "Mobile Apps",
   "Custom Software",
+  "Digital Registries",
   "UI/UX Design",
   "Systems Architecture",
+  "Management Systems",
   "Cloud & DevOps",
   "E-commerce",
   "APIs & Integrations",

@@ -92,7 +92,7 @@ export function Hero() {
 
             <Reveal delay={0.95} y={12}>
               <p className="mt-10 font-mono text-xs tracking-wide text-ink-faint">
-                Built for startups, growing teams &amp; established enterprises — across Kenya and beyond.
+                Built for startups, growing teams, enterprises &amp; public institutions — across Kenya and beyond.
               </p>
             </Reveal>
           </motion.div>

@@ -6,9 +6,10 @@ import { Reveal } from "@/components/ui/reveal";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { SpotlightCard } from "@/components/ui/spotlight-card";
 import { industries } from "@/lib/content";
+import { cn } from "@/lib/utils";
 
 const rowA = "E-commerce — Healthcare — Education — ";
-const rowB = "Finance — Logistics — Startups — ";
+const rowB = "Finance — Logistics — Government — Startups — ";
 
 export function Industries() {
   const ref = useRef<HTMLElement>(null);
@@ -43,9 +44,9 @@ export function Industries() {
           description="Every industry has its own rhythm, regulations and users. We bring the context to build software that fits — not software you have to bend your business around."
         />
 
-        <ul className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+        <ul className="mt-16 grid gap-5 sm:grid-cols-2 lg:grid-cols-12">
           {industries.map((item, i) => (
-            <Reveal as="li" key={item.name} delay={(i % 3) * 0.08}>
+            <Reveal as="li" key={item.name} delay={(i % 4) * 0.08} className={cn("h-full", i < 4 ? "lg:col-span-3" : "lg:col-span-4")}>
               <SpotlightCard className="group h-full rounded-3xl p-7">
                 <div className="flex items-center gap-4">
                   <span className="grid size-12 shrink-0 place-items-center rounded-2xl border border-line bg-brand/10 text-brand-bright transition-all duration-500 group-hover:bg-brand group-hover:text-on-brand">

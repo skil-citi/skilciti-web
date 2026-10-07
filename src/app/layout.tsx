@@ -40,6 +40,8 @@ export const metadata: Metadata = {
     "custom software",
     "UI/UX design",
     "systems consulting",
+    "digital registry systems",
+    "government management systems",
     "Skilciti",
   ],
   alternates: { canonical: "/" },

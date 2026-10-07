@@ -62,13 +62,13 @@ export default function AboutPage() {
                 <p>
                   Skilciti was founded with a passion for technology and design. Since then we&rsquo;ve grown into a
                   trusted collaborator for businesses across many sectors — from e-commerce and healthcare to
-                  education, finance and logistics.
+                  education, finance, logistics and the public sector.
                 </p>
               </Reveal>
               <Reveal delay={0.25} y={16}>
                 <p>
                   We specialize in user-friendly, scalable apps and visually captivating, functional websites — and
-                  increasingly in the systems that sit behind them. Whether you need a product built from scratch, a
+                  increasingly in the systems that sit behind them, from management platforms to digital registries. Whether you need a product built from scratch, a
                   platform modernized or an expert second opinion on your architecture, we work as an extension of
                   your team.
                 </p>
